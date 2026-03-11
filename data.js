@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   UTM Timetable Generator — data.js
+   UTHM Timetable Generator — data.js
    Automatically Generated via Python Parser
    Total courses: 145
 ═══════════════════════════════════════════════ */

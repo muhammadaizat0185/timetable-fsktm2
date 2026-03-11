@@ -1112,7 +1112,7 @@ function generateICS() {
 
   closeExportModal();
 
-  let ics = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//UTM Timetable Generator//EN\n";
+  let ics = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//UTHM Timetable Generator//EN\n";
   const semesterStart = new Date(startInput);
 
   // Format the 'UNTIL' date string for the calendar (Must be UTC format: YYYYMMDDTHHMMSSZ)
@@ -1158,7 +1158,7 @@ function generateICS() {
       const icsEnd = `${dateStr}T${formatTime(endHour)}`;
 
       ics += `BEGIN:VEVENT\n`;
-      ics += `UID:${code}-${sec}-${slot.day}-${h24}@utm-timetable\n`;
+      ics += `UID:${code}-${sec}-${slot.day}-${h24}@uthm-timetable\n`;
       ics += `SUMMARY:${code} - ${c.name}\n`;
       ics += `DESCRIPTION:Section: ${sec} | Type: ${typeLabel(slot.type)} | Lecturer: ${slot.lecturer || 'Unknown'}\n`;
       ics += `LOCATION:${(slot.venue || '').trim()}\n`;
@@ -1176,7 +1176,7 @@ function generateICS() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `Jadual_UTM.ics`;
+  a.download = `Jadual_UTHM.ics`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

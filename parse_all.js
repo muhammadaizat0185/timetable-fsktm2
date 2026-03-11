@@ -300,7 +300,7 @@ function generateTimetableData() {
     }
 
     const outputCode = `/* ═══════════════════════════════════════════════
-   UTM Timetable Generator — data.js
+   UTHM Timetable Generator — data.js
    Generated via Standalone Parser
    Total courses: ${Object.keys(coursesDB).length}
 ═══════════════════════════════════════════════ */
